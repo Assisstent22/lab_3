@@ -1,13 +1,16 @@
 # test/test_main.py
 
-import unittest
+import sys
+sys.path.append("..")
+
 from main import add
 
-class TestMain(unittest.TestCase):
-    def test_add(self):
-        self.assertEqual(add(1, 2), 3)
-        self.assertEqual(add(-1, 1), 0)
-        self.assertEqual(add(0, 0), 0)
+def test_add_1():
+    result = add(3, 4)
+    assert result == 7
 
-if __name__ == '__main__':
-    unittest.main()
+def test_add_2():
+    assert -1 == add(-4, 3)
+
+def test_add_3():
+    assert 0 == add(-4, 4)
