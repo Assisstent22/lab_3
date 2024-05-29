@@ -8,4 +8,9 @@
  * @return Сумма чисел x и y.
  */
 def add(x, y):
+    # @todo Добавить проверку на тип входных данных
     return x + y
+
+# @todo Реализовать функцию вычитания
+def subtract(x, y):
+    return x - y
