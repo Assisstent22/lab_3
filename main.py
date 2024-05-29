@@ -6,6 +6,6 @@
  * @param x Первое число.
  * @param y Второе число.
  * @return Сумма чисел x и y.
- */
+ **/
 def add(x, y):
     return x + y
